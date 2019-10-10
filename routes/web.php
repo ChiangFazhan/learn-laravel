@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+//    return view('welcome');
+
+    $environment = App::environment();
+    var_dump($environment);die;
+});
+
+Route::get('hello', function () {
+    return "hello welcome to Chiang's place";
 });
