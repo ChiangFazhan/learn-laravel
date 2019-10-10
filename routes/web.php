@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('hello', function () {
     return "hello welcome to Chiang's place";
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
